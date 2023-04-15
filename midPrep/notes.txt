@@ -1,0 +1,60 @@
+# Notes (14.4.2023.)
+
+He explained IDEs, how to run code etc.
+He started with basics, from HelloWorld, scaning variables, math operations...
+Than he introduced more data types like:
+    - double (he showed the difference between int and double)
+    - bool (how true/false work in c++)
+
+Increment and decrement operators - finally understood them
+He showed another way to skip line [endl is same as \n]
+
+Next thing were conditions.
+    - He explained it with simple if...else using bool variable.
+    - Than he has expanded the previous example with additional else if statement for *fasting* :D
+
+Than he converted to switch...case
+    - BREAK your cases !!!
+    - don't forget about brake please don't
+    - he showed how to group cases
+
+The last thing he covered before the break were loops
+    - for
+    - while
+        - he showed us how infinite loops work
+        - than he explained how to break infinite loops with break statement
+        - he showed that the first time while loop's condition is not satisfied, the while loop will break
+    - do while
+    - he explained why we use each one of them
+
+BREAK
+
+CHAR
+- After the break, first thing he explanied were chars, and how chars work with strings.
+- Complicated stuff, explained through code.
+
+
+FUNCTIONS
+- He explanied how to call functions, the void ones, the ones with parameters or not etc.
+- We need to be careful with defining functions. 
+    If we have several functions that share name, if parameters are not carefully defined, 
+    compiler mignt not be able to understand which function to trigger.
+- He also showed the way return works and some of its pros.
+
+
+PASS BY REFERENCE
+Simplest explanation from lab sessions, nothing too complicated.
+
+ARRAY
+- declaration: 
+    int arr[num_of_elements]; --> empty array
+    int arr[3] = {[0] : 1, [1] : 2, [2] : 3}; --> array with values
+
+- we can pass arrays to functions: 
+    void printArr(int x[], int num){
+        for (int i = 0; i < num; i++){
+            cout << x[i] << endl;
+        }
+    }
+
+- vector library used to eliminate some problems with arrays --> won't be on midterm

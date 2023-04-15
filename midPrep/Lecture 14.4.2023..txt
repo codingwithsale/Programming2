@@ -1,0 +1,311 @@
+Lecture 14.4.2023. --> Code
+-----------------------------------------------------------------------------
+#1
+
+#include <iostream>
+using namespace std;
+
+int main () {
+	
+	int x, y;
+	cin>>x;
+	cout<<x++<<" "<<++x;
+	
+	//1 --> 1 3
+
+	return 0;
+}
+-----------------------------------------------------------------------------
+#2 bool i if
+
+#include <iostream>
+using namespace std;
+
+int main () {
+
+	int x, y;
+	bool checked = false;
+	
+	cin>>x;
+	
+	if (x > 10 && x % 2 == 0){
+		checked = true;
+	}
+	if (checked){ //checked == true
+		cout<<"This is ok"<<endl;
+	} else if (x % 3 == 0){
+		cout<<"Fasting\n";
+	} else{
+		cout<<"This is not ok"<<endl;
+	}
+	return 0;
+}
+------------------------------------------------------------------------------
+#3 Switch case
+
+#include <iostream>
+using namespace std;
+
+int main () {
+	
+	int x, y;
+	bool checked = false;
+
+	cin>>x;
+
+	switch (x){
+		case 1: cout<<"This is one"<<endl; break;
+		case 2: cout<<"This is two"<<endl; break;
+		case 3: cout<<"This is three"<<endl; break;
+		default: cout<<"This is default"<<endl; break;
+		case 4:
+		case 5:
+		case 6: cout<<"This is 4 5 6"<<endl; break;
+	}
+	return 0;
+}
+-------------------------------------------------------------------------------
+#4 While loop
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	while (true){
+		cout<<"This is infinitive loop."<<endl;
+		break; //stop iteration
+	}
+	return 0;
+}
+-------------------------------------------------------------------------------
+#5 While i if
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	int counter = 3;
+	while (true){ 
+		cout<<"This is infinitive loop"<<endl;
+		counter++;
+		if (counter == 10) break;
+	}
+	return 0;
+}
+-------------------------------------------------------------------------------
+#6 While
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	int counter = 0;
+	while (counter != 5){
+		cout<<"This is infinitive loop"<<endl;
+		counter++;
+	}
+	/*while this expression is satisfied.
+	Kada je counter = 5 petlja se prekida*/
+
+	return 0;
+}
+--------------------------------------------------------------------------------
+#7 for loop
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	int counter = 0;
+	
+	for (int counter = 0; counter != 5; counter++){
+		cout<<"This is infinitive"<<endl;
+	}
+	return 0;
+}
+---------------------------------------------------------------------------------
+#8 for i while
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	int counter = 0;
+	while (counter != 3){
+		cout<<"This is infinitive loop"<<endl;
+		counter++;
+	} cout<<endl;
+	/*while this expression is satisfied.
+	Kada je counter = 5 petlja se prekida*/
+
+	for (int counter = 0; counter != 5; counter++){
+		cout<<"This is infinitive"<<endl;
+	}
+	cout<<counter<<endl; //3
+
+	return 0;
+}
+---------------------------------------------------------------------------------
+#9 char
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	char ch = 'D';
+	cout<<ch<<(int)ch;
+	return 0;
+}
+----------------------------------------------------------------------------------
+#10 char
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+	char ch = 'D';
+	int i = ch;
+	cout<<ch<<i;
+	return 0;
+}
+----------------------------------------------------------------------------------
+#11 string
+
+#include <iostream>
+#include <string>
+#include <cstring>
+using namespace std;
+
+int main (){
+
+	char ch = 'D', ch2;
+    	int i = ch;
+    	string sentence;
+    
+    	cin>>ch>>ch2; //p is taken by ch variable and r is taken by ch2 variable
+
+    	cout<<"\nThe first caracter of the entered sentence: "<<ch<<endl<<"The second character of the entered sentence: "<<ch2<<endl;
+    
+    	getline(cin, sentence);
+    	// sentence will start with rogramming...
+    	char ch1 = sentence[1];
+    	ch = sentence.at(2);
+    
+    	cout<<"\nThis is sentence: "<<sentence<<endl;
+    	cout<<"\nCharacter on the first position of the sentence: "<<ch1<<endl<<"\nCharacter on the second positon of the sentence: "<<ch;
+    
+    	sentence[1] = sentence[3];
+    
+    	for (int i = 0; i < sentence.size(); i++){
+        	sentence[i] = sentence[i]+1; //sentence[i]+1 is ascii code
+        	sentence.at(i) = sentence.at(i) + 1;
+        	sentence[i] = (char)toupper(sentence[i]); //potrebna <cstring> biblioteka
+    	} cout<<"\n"<<sentence;
+    	return 0;
+}
+---------------------------------------------------------------------------------
+#12 functions
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void f1(){
+    	cout<<"Simplicity"<<endl;
+}
+void f1(int a){
+   	cout<<"Simplicity with one parameter"<<endl;
+}
+void f1(double a){ // (druga funkcija)
+    	cout<<"Simplicity with one parameter double"<<endl;
+}
+void f1(double a, double b){
+    	cout<<"Simplicity with two parameters double"<<endl;
+}
+void f12(double a, double b = 0){ 
+/*compiler nece znati koju funkciju poziva (drugu ili ovu)
+Da popravimo ovo, potrebno je da ili promijenimo ime funkcije ili da promijenimo imena varijabli*/
+    	cout<<"Simplicity with two parameters double 0"<<endl;
+}
+int f2(int a){
+    	return a*a;
+}
+double f2(double a){
+    	if (a>6) return a;
+    	if (a>0) return sqrt(a);
+   	return a*a;
+}
+int main()
+{   
+  	f1();
+  	f1(5);
+  	f1(3.4);
+  	f1(3.4, 5.6);
+  	f12(3.5);
+  	int x = f2(2);
+  	cout<<f2(2)<<endl<<x;
+  	x= f2(9)+f2(2)-f2(8);
+  	cout<<endl<<x<<" "<<f2(2) - f2(8);
+  	cout<<endl<<f2(2.3);
+
+	return 0;
+}
+-----------------------------------------------------------------------------------
+#13 pass by reference
+
+#include <iostream>
+using namespace std;
+
+void f3(int a){
+	a = 5;
+	cout<<endl<<a;
+}
+int main (){
+	int b = 1;
+	f3(b);
+	cout<<"b = "<<b;
+
+	return 0;
+}
+-----------------------------------------------------------------------------------
+#14 pass by value
+
+#include <iostream>
+using namespace std;
+
+void f3(int &a){
+	a = 5;
+	cout<<endl<<a;
+}
+int main (){
+	int b = 1;
+	f3(b);
+	cout<<"b = "<<b;
+
+	return 0;
+}
+-----------------------------------------------------------------------------------
+#15 arrays
+
+#include <iostream>
+using namespace std;
+
+void printArr(int x[], int num){
+    	for (int i = 0; i<num; i++){
+        	cout<<x[i]<<endl;
+    	}
+}
+int main()
+{    
+    	int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    	printArr(arr, 10);
+    
+    	return 0;
+}
