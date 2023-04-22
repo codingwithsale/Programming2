@@ -8,18 +8,25 @@ int main(){
     string random1, random2;
     cout << "Please enter your string: ", getline(cin, random1);
     cout << "Please enter your substring: ", getline(cin, random2);
-    int counter = 0;
+    int j = 0;
+    bool flag = false;
 
-    for (int i = 0; i < random2.length(); i++)
+    for (int i = 0; i < random1.length(); i++)
     {
-        if (random1[counter] == random2[i]){
-            counter++;
+        if (random1[i] != random2[j]){
+            j = 0;
+        }
+        else if (random1[i] == random2[j]){
+            j++;
+        }
+        
+        if (j >= random2.length()){
+            flag = true;
+            break;
         }
     }
     
-    bool result = (counter == random2.length()) ? true : false;
-
-    cout << result << endl;
+    cout << flag << endl;
     
     return 0;
 }
