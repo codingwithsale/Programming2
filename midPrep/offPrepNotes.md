@@ -45,57 +45,57 @@
 > **The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**
 
     - Numeric operators
-    
+\
     - Integer division
         5 / 3 yields an integer 1
         5.0 / 2 yields a double value 2.5
         5 % 2 yields 1 (the remainder of the division)
     - Exponent operations with <cmath> library
-
+\
     - We can express every arithmetic expression with code
-
+\
     - Displaying the current time
         - Example
             Write a program that displays current time in GMT in the format hour:minute:second such as 1:45:19.
             The time(0) function in the ctime header file returns the current time in seconds elapsed since the time
                 00:00:00 on January 1, 1970 
-
+\
             int main() {
             // Obtain the total seconds since the midnight, Jan 1, 1970
             int totalSeconds = time(0);
-
+\
             // Compute the current second in the minute in the hour
             int currentSecond = totalSeconds % 60;
-
+\
             // Obtain the total minutes
             int totalMinutes = totalSeconds / 60;
-
+\
             // Compute the current minute in the hour
             int currentMinute = totalMinutes % 60;
-
+\
             // Obtain the total hours
             long totalHours = totalMinutes / 60;
-
+\
             // Compute the current hour
             int currentHour = (int)(totalHours % 24);
-
+\
             // Display results
             cout << "Current time is " << currentHour << ":" << currentMinute << ":" << currentSecond << " GMT" << endl;
-
+\
             return 0;
             }
-
+\
     - Increment and decrement operators
         1. ++var --> pre-increment --> Increments var by 1 and evaluates to the new value in var after the increment.
         2. var++ --> post-increment --> Evaluates to the original value in var and increments var by 1.
         3. --var --> pre-decrement --> Decrements var by 1 and evaluates to the new value in var after the decrement.
         4. var-- --> post-decrement --> Evaluates to the original value in var and decrements var by 1.
-
+\
     - Numeric type conversion
         Casting does not change the variable being cast. For example, d is not changed after casting in the following code:
             double d = 4.5;
             int i = static_cast<int>(d);
-
+\
     - Common errors:
         1. Undeclared or uninitialized variables
             double interestRate = 0.05;
