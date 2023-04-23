@@ -42,7 +42,7 @@
 
     - Variables are used to represent values that may be changed in program.
 
-> **Catch this!**
+> Catch this!
 >> cout << x = 1; // Assigns 1 to x and outputs 1
 
     - A named constant  an identifier that represents a permanent value.
@@ -145,7 +145,7 @@
         ~ && --> logical and
         ~ || --> logical or
         ~ !  --> logical not
-        
+
     - We can use two ways to get user input. The common one is cin, but cin can't take for example multiple words of string.
         To fix that problem, we can take user input like this:
             getline(cin, variableName)
