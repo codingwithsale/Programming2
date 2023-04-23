@@ -32,7 +32,7 @@
             cout << "Enter three numbers: ", cin >> x >> y >> z;
     - Variables are used to represent values that may be changed in program.
 
-> **Catch this!**
+> **Catch this!**\
 > cout << x = 1; // Assigns 1 to x and outputs 1
 
     - A named constant  an identifier that represents a permanent value.
