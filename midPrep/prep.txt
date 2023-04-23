@@ -1,0 +1,57 @@
+Preparation for the midterm exam (w3resource.com)
+
+C++ Basic
+
+2. Write a program in C++ to print the sum of two numbers. Go to the editor
+Sample Output:
+Print the sum of two numbers :
+-----------------------------------
+The sum of 29 and 30 is : 59
+int main(){
+    
+    int a, b, sum;
+
+    cout << "Print the sum of two numbers : ", cin >> a >> b;
+    sum = a + b;
+    cout << "-----------------------------------" << endl;\
+    cout << "The sum of " << a << " and " << b << " is : " << sum << endl;
+
+    return 0;
+}
+
+86. Write a C++ program to add up all the digits between two given integers. Add all the digits between 11 and 16. 
+int main(){
+    
+    int a, b, sum = 0, r;
+
+    cout << "Enter the lower number: ", cin >> a;
+    cout << "Enter the higher number: ", cin >> b;
+
+    for(int i = a; i <= b; i++){
+        int j = i;
+        while (j != 0){
+            r = j % 10;
+            sum += r;
+            j /= 10;
+        }
+    }
+
+    cout << "The sum of all digits between " << a << " and " << b << " is " << sum << endl;
+
+    return 0;
+}
+
+83. Write a C++ program to convert a given number into hours and minutes. Separate the number of hours and minutes with a colon.
+int main(){
+    
+    int n, h, m; 
+    cout << "Please enter the number: ", cin >> n;
+
+    m = n % 60;
+    h = n / 60;
+
+    cout << h << ":" << m << endl;
+
+    return 0;
+}
+
