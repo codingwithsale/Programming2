@@ -1,8 +1,8 @@
 # Zapisi dana 23.4.2023.
 
-> Danas planiram preci redom preko prezentacija profesora Dzelihodzica i preko tutoriala koje drzi kolega Nedim.
-> Cilj je ponoviti do sada predjeno gradivo, te uvidjeti ukoliko je nesto bitno propusteno.
-> Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laganih vjezbi za C++.
+> **Danas planiram preci redom preko prezentacija profesora Dzelihodzica i preko tutoriala koje drzi kolega Nedim.**
+> **Cilj je ponoviti do sada predjeno gradivo, te uvidjeti ukoliko je nesto bitno propusteno.**
+> **Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laganih vjezbi za C++.**
 
 ## Lecture 01 - Intro to programming and C++, Elementary programming
 
