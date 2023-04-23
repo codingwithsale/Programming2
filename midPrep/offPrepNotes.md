@@ -6,7 +6,7 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
 
 ## ***Lecture 01 - Intro to programming and C++, Elementary programming***
 
-  ### [Chapter1] **Intro to programming and C++**
+  ### **Intro to programming and C++**
     - C++ is an object-oriented programming language, based on C.
     - C++ needs a compiler that translates the entire source program into a machine language file for execution.
     - First program (HelloWorld).
@@ -23,13 +23,14 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
         2. Runtime errors (eg. deviding with 0)
         3. Logic errors
 
-  ### [Chapter2] **Elementary programming**
+  ### **Elementary programming**
     - Reading input from keyboard
         Multiple input in one statement:
             int x, y, z;
             cout << "Enter three numbers: ", cin >> x >> y >> z;
     - Variables are used to represent values that may be changed in program.
         **Catch this!** 
+        #### Idiot
             cout << x = 1; // Assigns 1 to x and outputs 1
     - A named constant  an identifier that represents a permanent value.
         const datatype CONSTANTNAME = VALUE;
