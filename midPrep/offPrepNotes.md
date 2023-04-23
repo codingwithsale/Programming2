@@ -4,9 +4,9 @@ Danas planiram preci redom preko prezentacija profesora Dzelihodzica i preko tut
 Cilj je ponoviti do sada predjeno gradivo, te uvidjeti ukoliko je nesto bitno propusteno.\
 Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laganih vjezbi za C++.\
 
-## Lecture 01 - Intro to programming and C++, Elementary programming
+## ***Lecture 01 - Intro to programming and C++, Elementary programming***
 
-  [Chapter1] ***Intro to programming and C++***\
+  ### [Chapter1]***Intro to programming and C++***\
     - C++ is an object-oriented programming language, based on C.\
     - C++ needs a compiler that translates the entire source program into a machine language file for execution.\
     - First program (HelloWorld).\
@@ -23,7 +23,7 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
         2. Runtime errors (eg. deviding with 0)\
         3. Logic errors
 
-  [Chapter2] ***Elementary programming***\
+  ### [Chapter2] ***Elementary programming***\
     - Reading input from keyboard\
         Multiple input in one statement:\
             int x, y, z;\
@@ -86,7 +86,7 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
             float b = 1000.0;\
             cout << a - b << endl; // displays 0.429993, not 0.43
 
-  [Lab01] ***Introduction to C++***\
+  ### [Lab01] ***Introduction to C++***\
     - The main difference between C and C++ is that C++ support classes and objects, while C doesn't.\
     - Parts explained below are mandatory parts of program:\
         ~ #include<iostream> --> header file library that lets us work with input and output objects.\
