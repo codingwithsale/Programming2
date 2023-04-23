@@ -6,7 +6,7 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
 
 ## ***Lecture 01 - Intro to programming and C++, Elementary programming***
 
-  ### **Intro to programming and C++**
+  ### {Chapter1} **Intro to programming and C++**
     - C++ is an object-oriented programming language, based on C.
     - C++ needs a compiler that translates the entire source program into a machine language file for execution.
     - First program (HelloWorld).
@@ -23,14 +23,13 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
         2. Runtime errors (eg. deviding with 0)
         3. Logic errors
 
-  ### **Elementary programming**
+  ### {Chapter2} **Elementary programming**
     - Reading input from keyboard
         Multiple input in one statement:
             int x, y, z;
             cout << "Enter three numbers: ", cin >> x >> y >> z;
     - Variables are used to represent values that may be changed in program.
-        **Catch this!** 
-        #### Idiot
+        **Catch this!**
             cout << x = 1; // Assigns 1 to x and outputs 1
     - A named constant  an identifier that represents a permanent value.
         const datatype CONSTANTNAME = VALUE;
@@ -87,7 +86,7 @@ Prije prelaska samih materijala, na siteu w3schools.com cu preci njihov set laga
             float b = 1000.0;
             cout << a - b << endl; // displays 0.429993, not 0.43
 
-  ### [Lab01] ***Introduction to C++***
+  ### {Lab1} ***Introduction to C++***
     - The main difference between C and C++ is that C++ support classes and objects, while C doesn't.
     - Parts explained below are mandatory parts of program:
         ~ #include<iostream> --> header file library that lets us work with input and output objects.
