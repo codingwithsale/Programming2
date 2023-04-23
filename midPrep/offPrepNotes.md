@@ -45,7 +45,6 @@
 > **The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**
 
     - Numeric operators
-\
     - Integer division
         5 / 3 yields an integer 1
         5.0 / 2 yields a double value 2.5
