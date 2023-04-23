@@ -32,7 +32,7 @@
             cout << "Enter three numbers: ", cin >> x >> y >> z;
     - Variables are used to represent values that may be changed in program.
 
-        > Catch this!
+**Catch this!**
             cout << x = 1; // Assigns 1 to x and outputs 1
 
     - A named constant  an identifier that represents a permanent value.
@@ -40,7 +40,7 @@
     - Numerical data types:
         1. integers (signed, unsigned, short, long...)
         2. floating-point numbers (float, double, long double...)
-            **The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**
+**The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**
     - Numeric operators
     - Integer division
         5 / 3 yields an integer 1
