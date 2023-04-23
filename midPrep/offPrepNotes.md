@@ -9,16 +9,25 @@
   ### [Chapter1] Intro to programming and C++
 
     - C++ is an object-oriented programming language, based on C.
+
     - C++ needs a compiler that translates the entire source program into a machine language file for execution.
+
     - First program (HelloWorld).
+
     - Special characters and comments in C++
         Commenting multiple lines of code in C++ with /* block of code */.
+
     - Perforimg mathematical computations and displaying the result to the console.
+
     - Toolchain in the sequence of tools that do something towards the process of converting program to from a 
         high-level language to an executable program.
+
     - IDEs.
+
     - To start the toolchain, we use build.
+
     - IDEs use different toolchains, where GCC/G++ is one of the world's most famous compilers.
+
     - Programming errors:
         1. Syntax errors (missing quotation marks, braces, semicolons, misspelling names, etc.)
         2. Runtime errors (eg. deviding with 0)
@@ -30,14 +39,15 @@
         Multiple input in one statement:
             int x, y, z;
             cout << "Enter three numbers: ", cin >> x >> y >> z;
+
     - Variables are used to represent values that may be changed in program.
 
 > **Catch this!**
->
 >> cout << x = 1; // Assigns 1 to x and outputs 1
 
     - A named constant  an identifier that represents a permanent value.
         const datatype CONSTANTNAME = VALUE;
+
     - Numerical data types:
         1. integers (signed, unsigned, short, long...)
         2. floating-point numbers (float, double, long double...)
@@ -45,12 +55,16 @@
 > **The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**
 
     - Numeric operators
+
     - Integer division
         5 / 3 yields an integer 1
         5.0 / 2 yields a double value 2.5
         5 % 2 yields 1 (the remainder of the division)
-    - Exponent operations with cmath library
+
+    - Exponent operations with <cmath> library
+
     - We can express every arithmetic expression with code
+
     - Displaying the current time
         Example
             Write a program that displays current time in GMT in the format hour:minute:second such as 1:45:19.
@@ -107,22 +121,31 @@
   ### [Lab1] Introduction to C++
 
     - The main difference between C and C++ is that C++ support classes and objects, while C doesn't.
+
     - Parts explained below are mandatory parts of program:
         ~ #include<iostream> --> header file library that lets us work with input and output objects.
             Header files add functionality to C++ programs.
         ~ using namespace std --> meand that we can use names for objects and variables from the standard library.
         ~ int main(){} is a function. Any code inside curly brackets will be executed.
+
     - We use comments to explain C++ code, and to make it more readable. In the previous part, it is shown how to comment 
         single line or multiple lines of code.
+
     - To insert a new line, use either \n character or endl manipulator.
+
     - The char data type is used to store a single character. The character must be surrounded by single quotes, like 'A'.
+
     - Alternatively, we can display certain characters by using ASCII values.
+
     - To use strings, the additional header file <string> must be included in the source code.
-    - Variables with keyword const have non-changeable value and if we try to change it, we will get error
+
+    - Variables with keyword const have non-changeable value and if we try to change it, we will get error.
+
     - Logical operators
         ~ && --> logical and
         ~ || --> logical or
         ~ !  --> logical not
+        
     - We can use two ways to get user input. The common one is cin, but cin can't take for example multiple words of string.
         To fix that problem, we can take user input like this:
             getline(cin, variableName)
