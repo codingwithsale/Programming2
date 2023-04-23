@@ -40,7 +40,9 @@
     - Numerical data types:
         1. integers (signed, unsigned, short, long...)
         2. floating-point numbers (float, double, long double...)
-**The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**
+        
+**The double type values are more accurate than the float type values. So it is safer to use double for most calculations.**\
+
     - Numeric operators
     - Integer division
         5 / 3 yields an integer 1
