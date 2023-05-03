@@ -1,0 +1,22 @@
+Notes from the 3rd of May, 2023.
+
+Topic covered is Multidimensional Arrays
+
+Data in a table or a matrix can be represented using a two-dimensional arrays.
+
+Declaration: 
+    arrayName[ROW_SIZE][COLUMN_SIZE];
+    int distances[7][7];
+
+Accesing a specific element:
+    int bostonToDallas = distance[1][5];
+
+Assigning values:
+    int m[4][3] = {{1, 2, 3}, {4, 5, 6}, {7. 8, 9}, {10, 11, 12}};
+
+We need nested for loops for looping over a two-dimensional arrays. [Code in presentation]
+
+------------------------------------------------------------------------------------------------
+Break! I think that we will continue this topic next wednesday.
+------------------------------------------------------------------------------------------------
+
