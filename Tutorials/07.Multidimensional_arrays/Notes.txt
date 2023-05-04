@@ -1,0 +1,27 @@
+# Notes on tutorial that took place on 4th of May, 2023
+
+TWO-DIMENSIONAL ARRAYS
+
+Defining two-dimentional array:
+    int my_array[ROWS][COLUMNS] = {{row_1}, {row_2}, ... , {row_n}}
+
+Accessing elements of a multidimensional array:
+    int my_array[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+    cout << my_array[2][2] << endl; ---> 11
+
+Changing value on specific location:
+    my_array[2][2] = 69;
+    cout << my_array[2][2] << endl; ---> 69
+
+Looping through a multidimensional array:
+    int my_array[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+    for (int i = 0; i < 3; i++){        // looping over rows
+        for (int j = 0; j < 4; j++){    // looping over columns
+            cout << my_array[i][j];
+        }
+    }
+
+THREE-DIMENSIONAL ARRAYS
+
+Defining three-dimensional array:
+    int my_array[2][2][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}}, {{9, 10, 11, 12}, {13, 14, 15, 16}}
