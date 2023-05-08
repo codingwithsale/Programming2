@@ -6,8 +6,7 @@ using namespace std;
 
 string uniqueCharacters(string str){
     string new_str;
-    new_str += str[0];
-    for (int i = 1; i < str.length(); i++){
+    for (int i = 0; i < str.length(); i++){
         int counter = 0;
         for (int j = 0; j < new_str.length(); j++){
             if (str[i] == new_str[j]){
@@ -23,7 +22,7 @@ string uniqueCharacters(string str){
 
 int main(){
     
-    string str1 = "ababccddde";
+    string str1 = "abbccddde";
 
     cout << uniqueCharacters(str1);
     
