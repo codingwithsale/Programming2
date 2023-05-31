@@ -11,9 +11,11 @@ int main() {
     int* arr_ptr = myarr;
 
     for (int i = 0; i < 5; i++){
-        cout << *arr_ptr << endl;
+        cout << *arr_ptr << " ";
         arr_ptr += 1;
     }
+
+    cout << endl;
 
     return 0;
 }
