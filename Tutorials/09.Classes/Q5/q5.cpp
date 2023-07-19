@@ -15,7 +15,7 @@ class Room{
             height = h;
         };
 
-    double area(double length, double width){
+    double area(){
         return length * width;
     };
 
@@ -49,7 +49,7 @@ int main(){
 
     Room room1(5.4, 3.2, 2.0);
 
-    cout << room1.area(room1.getLength(), room1.getWidth()) << endl;
+    cout << room1.area() << endl;
     cout << room1.volume(room1.getLength(), room1.getWidth(), room1.getHeight()) << endl;
     
     return 0;

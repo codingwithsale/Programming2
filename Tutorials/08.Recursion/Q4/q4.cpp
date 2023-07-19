@@ -4,25 +4,22 @@
 #include<ctime>
 using namespace std;
 
-string reverse (string num, int len){
-    if (len < 0){
-        return "";
-    }
-    else {
-        return num[len] + reverse(num, len - 1);
-    }
-}
+int reverse(int n)
+{
 
-int main(){
-    // 4: Write a C++ program that will reverse the number using recursion.
+   if (n < 10) {
+        return n;
+   }
 
-    string str1;
-    int n;
-    cout << "Please enter the number: ", cin >> n;
+   else{
+        cout<<n%10;
+        return reverse(n/10);
+   }
+};
 
-    str1 = to_string(n);
-
-    cout << reverse(str1, str1.length()) << endl;
-    
-    return 0;
+int main()
+{
+   int n=8;
+   reverse(n); 
+   return 0;
 }
