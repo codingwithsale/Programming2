@@ -1,42 +1,61 @@
-#include<iostream>
-#include<cmath>
-#include<string>
-#include<ctime>
+#include <iostream>
+#include <cstring>
 using namespace std;
 
-int main(){
-    // Ja sam peder
-    // Output : aJay amsay ederpay
-
-    string str = "Ja sam peder", new_str;
-    int counter = 0;
-    string random;
-
-    for (int i = 0; i < str.length(); i++){
-        if (str[i] != ' '){
-            counter++;
-            random += str[i];
+int sumOfDigits(int n, int& even, int& odd){
+    int temp;
+    while (n != 0){
+        temp = n % 10;
+        if (temp % 2 == 0){
+            even += temp;
         }
-        else if (str[i] == ' ') {
-            for (int j = 1; j < counter; j++){
-                new_str += random[j];
-            }
-            new_str += random[0];
-            new_str += "ay ";
-            random = "";
-            counter = 0;
+        else if (temp % 2 != 0){
+            odd += temp;
         }
-
-        if (i == str.length() - 1){
-            for (int j = 1; j < counter; j++){
-                new_str += random[j];
-            }
-            new_str += random[0];
-            new_str += "ay";
-        }
+        n /= 10;
     }
+    return even + odd;
+}
 
-    cout << new_str << endl;
-    
+int main(){
+
+    int num = 123;
+    int e = 0, o = 0;
+    cout << sumOfDigits(num, e, o) << endl;
+    cout << "even " << e << " odd " << o << endl;
+
+    int num2 = 12345;
+    int e2 = 0, o2 = 0;
+    cout << sumOfDigits(num2, e2, o2) << endl;
+    cout << "even " << e2 << " odd " << o2 << endl;
+
+    return 0;
+}
+
+int sumOfDigits(int n, int& even, int& odd) {
+    int temp;
+    while (n != 0) {
+        temp = n % 10;
+        if (temp % 2 == 0) {
+            even += temp;
+        } else if (temp % 2 != 0) {
+            odd += temp;
+        }
+        n /= 10;
+    }
+    return even + odd;
+}
+
+int main() {
+    int num = 123;
+    int e = 0, o = 0;
+    cout << sumOfDigits(num, e, o) << endl;
+    cout << "even " << e << " odd " << o << endl;
+
+    int num2 = 12345;
+    int e2 = 0, o2 = 0;
+    cout << sumOfDigits(num2, e2, o2) << endl;
+    cout << "even " << e2 << " odd " << o2 << endl;
+
     return 0;
 }
