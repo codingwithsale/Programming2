@@ -14,7 +14,7 @@ int power_of_n(int num, int n){
 }
 
 int main(){
-    // 3: Write a C++ program to number to the power of n (using recursion).
+    // 3: Write a C++ program to find number to the power of n (using recursion).
 
     cout << power_of_n(5, 3) << endl;
     
