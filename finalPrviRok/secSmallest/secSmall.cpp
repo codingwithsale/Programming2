@@ -21,8 +21,10 @@ int secondSmallestNumber (int array[], int size) {
             secondSmallest = array[i];
         }
     }
+
     return secondSmallest;
 }
+
 int main(){
     int arr[5] = {25,24,18,41,6};
 

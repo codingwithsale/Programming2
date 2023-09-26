@@ -41,13 +41,16 @@ class Student {
 
 int main(){
     Student student1("John", "Smith", 20);
+
     student1.addGrade(5);
     student1.addGrade(4);
     student1.addGrade(3);
     student1.addGrade(5);
     student1.addGrade(5);
 
+
     Student student2("Mujo", "Mujic", 21);
+
     student2.addGrade(5);
     student2.addGrade(5);
     student2.addGrade(5);

@@ -4,7 +4,7 @@
 #include<ctime>
 using namespace std;
 
-void reverseArray(int* arr, int size){
+void reverseArray(int *arr, int size){
     for (int i = 0, j = size - 1; i < j; i++, j--){
         int temp = arr[i];
         arr[i] = arr[j];

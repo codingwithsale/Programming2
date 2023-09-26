@@ -16,7 +16,7 @@ int stringLength(const char str[]){
 
 int main(){
     
-    const char* someString = "Hello, World!";
+    const char someString[] = "Hello, World!";
 
     int length = stringLength(someString);
 

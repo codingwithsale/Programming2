@@ -14,7 +14,7 @@ bool checkUpper(char ch){
 }
 
 void capitalizeLastLetter(char str[]){
-    int size = strlen(str);
+    int size = strlen(str); // IMPORTANT TO REMEMBER
     for (int i = 0; i < size; i++){
         if (checkUpper(str[i]) == true){
             str[i] = tolower(str[i]);

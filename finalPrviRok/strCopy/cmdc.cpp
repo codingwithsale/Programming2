@@ -5,20 +5,22 @@
 using namespace std;
 
 void stringCopy(char d[], const char str[]){
+    // Prvi nacin
     int i = 0;
     while (str[i] != '\0'){
         d[i] = str[i];
         i++;
     }
 
+    // Drugi nacin
     for (int i = 0; i < 20; i++){
-        *(d+i) = *(str + i);
+        d[i] = str[i];
     }
 }
 
 int main(){
     
-    const char* src = "Hello, World!";
+    const char src[] = "Hello, World!";
     char dest[20];
 
     stringCopy(dest, src);

@@ -5,10 +5,11 @@
 using namespace std;
 
 class Rectangle{
-    public:
+    private:
         double length;
         double width;
 
+    public:
         Rectangle (double l, double w){
             length = l;
             width = w;

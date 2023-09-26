@@ -36,11 +36,14 @@ int main(){
     int factor = 2;
     int rowSum[ROWS];
 
-    // multiplyGrid(grid, factor);
+    //multiplyGrid(grid, factor);
     rowSums(grid, rowSum);
 
     for (int i = 0; i < ROWS; i++){
-        std::cout << rowSum[i] << ' ';
+        for (int j = 0; j < COLS; j++){
+            cout << grid[i][j];
+        }
+        cout << endl;
     }
     std::cout << endl;
     

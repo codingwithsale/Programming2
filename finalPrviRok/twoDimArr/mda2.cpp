@@ -4,36 +4,36 @@
 #include<ctime>
 using namespace std;
 
-/*
-    *  *
-    ** *
-    * **
-    *  *
-*/
-
 const int ROWS = 4;
 const int COLS = 4;
 
-void fillCharArray(char arr[][COLS], int size, char ch){
+/*
+    *  *
+     **
+     **
+    *  *
+*/
+
+void fillCharArray (char array[][COLS], int size, char ch){
     for (int i = 0; i < ROWS; i++){
         for (int j = 0; j < COLS; j++){
-            if (j == 0 || j == size - 1){
-                arr[i][j] = ch;
+            if (i == j){
+                array[i][j] = ch;
             }
-            else if (i == j){
-                arr[i][j] = ch;
+            else if (i + j == 3){
+                array[i][j] = ch;
             }
             else {
-                arr[i][j] = ' ';
+                array[i][j] = ' ';
             }
         }
     }
 }
 
-void printArray(char arr[][COLS], int ROWS, int COLS){
+void printArray(char array[ROWS][COLS], int ROWS, int COLS){
     for (int i = 0; i < ROWS; i++){
         for (int j = 0; j < COLS; j++){
-            cout << arr[i][j];
+            cout << array[i][j];
         }
         cout << endl;
     }
